@@ -7,6 +7,7 @@
 SetTitleMatchMode, 2
 #NoEnv
 #KeyHistory 0
+#SingleInstance ignore
 ListLines Off
 Process, Priority,,H
 SetBatchLines, -1
@@ -241,19 +242,19 @@ warp:
     sleep 5000
     MouseClick,, 1217, 366 ; click warp
     sleep 1000
-    MouseClick,, 550, 450 ; accept warp
+    MouseClick,, 540, 580 ; accept warp
     sleep 3000
 
     ; upgrade pistol after warp
     MouseClick,, 1238, 250, 25
 
     ; spend WC
-    MouseClick,, 770, 640, 3 ; starting wave back
-    MouseClick,, 700, 640, 3 ; more WC
-    MouseClick,, 630, 640, 3 ; more WC chance
+    ;MouseClick,, 770, 640, 3 ; starting wave back
+    ;MouseClick,, 700, 640, 3 ; more WC
+    ;MouseClick,, 630, 640, 3 ; more WC chance
 
     ; close weapon cubes dialog if opened
-    MouseClick,, 1014, 366, 3
+    MouseClick,, 1090, 333, 3
 
     ; upgrade perks after warp
     MouseClick,, 1217, 366, 20
