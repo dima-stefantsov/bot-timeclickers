@@ -1,5 +1,5 @@
 ; must use
-; 
+;
 ; windowed 1280x768
 ; all settings minimum simple
 ; keybinds default
@@ -44,7 +44,7 @@ start_bot()
 {
     notify("Starting bot...", 1000)
     Menu, Tray, Icon, shell32.dll, 44
-    
+
     start_watchdog()
     start_shooter()
     start_upgrades()
@@ -158,7 +158,7 @@ get_random_warp_minutes()
     if roll(6) {
         minutes += 60
     }
-    
+
     if roll(5) {
         minutes /= 5
     }
@@ -258,7 +258,7 @@ warp:
 
     ; upgrade perks after warp
     MouseClick,, 1217, 366, 20
-    
+
     ; in case warp was clicked again, cancel it
     MouseClick,, 750, 450, 3
 
@@ -321,7 +321,7 @@ warp:
         {
             stop_bot()
         }
-        return 
+        return
 
 #IfWinActive
 
